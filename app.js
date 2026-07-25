@@ -114,6 +114,9 @@ app.listen("8080",()=>{
     console.log("server started");
 })
 
+app.get("/",(req,res)=>{
+    res.redirect("/listings");
+})
 app.all("/*splat", (req, res) => {
   res.status(404).send("404 - Page Not Found");
 });
