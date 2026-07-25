@@ -1,0 +1,63 @@
+<%layout("/layouts/boilerplate.ejs")%>
+<body>
+   <div class="row">
+      <div class="col-8 offset-2">
+         <br>
+         <h3>Create new listing</h3>
+         <form method="post" action="/listings/new" class="needs-validation" novalidate enctype="multipart/form-data">
+            <div>
+               <label for="title" class="form-label">Title</label>
+               <input type="text" name="listings[title]" id="title"
+                  class="form-control" required>
+                  <div class="valid-feedback">Title looks good</div>
+                  <div class="invalid-feedback">Enter valid title</div>
+            </div>
+            <div>
+               <label for="description" class="form-label">Description</label>
+               <textarea type="text" name="listings[description]"
+                  id="description" class="form-control" required></textarea>
+                     <div class="valid-feedback">Description looks good</div>
+                  <div class="invalid-feedback">Enter valid Description</div>
+            </div>
+            <div>
+               <label for="image" class="form-label">Upload Image</label>
+               <input type="file" name="listings[image]" id="image"
+                  class="form-control" required>
+                     <div class="valid-feedback">Image looks good</div>
+                  <div class="invalid-feedback">Enter valid image URL</div>
+            </div>
+
+            <div>
+               <label for="price" class="form-label">Price</label>
+               <input  name="listings[price]" id="price"
+                  class="form-control" required>
+                     <div class="valid-feedback">Price Looks good</div>
+                  <div class="invalid-feedback">Enter valid price</div>
+            </div>
+            <div class="row">
+               <div class="col-4">
+                  <div>
+                     <label for="location" class="form-label">Location</label>
+                     <input type="text" name="listings[location]" id="location"
+                        class="form-control" required>
+                           <div class="valid-feedback">Location Looks good</div>
+                  <div class="invalid-feedback">Enter valid Location</div>
+                  </div>
+               </div>
+               <div class="col-8">
+                  <div>
+                     <label for="country" class="form-label">Country</label>
+                     <input type="text" name="listings[country]" id="country"
+                        class="form-control" required>
+                           <div class="valid-feedback">Contry Name looks good</div>
+                  <div class="invalid-feedback">Enter valid country Name</div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <button class="btn btn-dark add-btn">Creat New Listing</button>
+            <br>
+         </form>
+      </div>
+   </div>
+</body>
