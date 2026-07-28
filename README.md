@@ -96,19 +96,6 @@ cd wonderlust
 npm install
 ```
 
-### Create Environment Variables
-
-Create a `.env` file in the project root and add:
-
-```env
-ATLASDB_URL=your_mongodb_connection_string
-
-CLOUD_NAME=your_cloudinary_cloud_name
-CLOUD_API_KEY=your_cloudinary_api_key
-CLOUD_API_SECRET=your_cloudinary_api_secret
-
-SECRET=your_session_secret
-```
 
 ### Start the Server
 
